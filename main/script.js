@@ -99,25 +99,24 @@
 var divFoto = new Vue({
   el:'#app',
   data:{
-    'Img0': 'img/cabin.png',
-    'img1': 'img/cake.png',
-    'img2': 'img/cabin.png',
+    'img0': 'img/cabin.png',
+    // 'img1': 'img/cake.png',
+    // 'img2': 'img/cabin.png',
+    'img3': 'img/game.png',
     'activeImg': 'img/game.png'
   },
   methods:{
     clickImg(){
 
       if(this.activeImg==this.img0){
-        this.activeImg = this.img1;
-      }else if(this.activeImg==this.img1){
-        this.activeImg = this.img2;
-      }else{
         this.activeImg = this.img3;
+      }else {
+        this.activeImg = this.img0;
       }
       // this.img1 = this.img2;
     }
   }
-  console.log();
+
 })
 
 // $(document).ready(init);
