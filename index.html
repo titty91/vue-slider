@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <script type="text/javascript">
-      //GOAL: ricreare lo slider visto in jquery, con tecnologia Vue
-      //BONUS: aggiungere un timer che permetta di ciclare le immagini in automatico (cambio ogni 3sec)
-    </script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <title> slider</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2e0cc00556.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style/style.css">
+    <script src="main/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <section id="app" class="slideContainer">
+            <h1>Carousel</h1>
+
+            <div class="imgs-list noSelect">
+                <i class="far fa-caret-square-left" id="left-arrow" @click='clickImg'></i>
+
+                <!-- Img 0 -->
+                <img class="active firstImg"
+                    :src="activeImg" alt="Img-0"
+                    data-imgPos='0'>
+
+                <!-- Img 1 -->
+                <!-- <img src="img/cake.png"
+                    alt="Img-1" data-imgPos='1'> -->
+
+                <!-- Img 2 -->
+                <!-- <img src="img/circus.png"
+                    alt="Img-2" data-imgPos='2'> -->
+
+                <!-- Img 3 -->
+                <!-- <img class="lastImg"
+                    src="img/game.png" alt="Img-3"
+                    data-imgPos='3'> -->
+
+                <i class="far fa-caret-square-right" id="right-arrow" @click='clickImg'></i>
+
+                <div class="dots">
+                    <i class="fas fa-circle" id="firstDot" data-imgPos='0'></i>
+                    <i class="far fa-circle" data-imgPos='1'></i>
+                    <i class="far fa-circle" data-imgPos='2'></i>
+                    <i class="far fa-circle" id="lastDot" data-imgPos='3'></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
 </html>
