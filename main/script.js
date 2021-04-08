@@ -14,16 +14,16 @@ var divFoto = new Vue({
     'activeImg': 0
   },
   methods:{
-    clickImg(){
+    clickImg: function(){
       leftArrow: function clickLeft(){
         this.activeImg--;
         if(this.activeImg < 0){
-          this.activeImg = this.img.length - 1;
+          this.activeImg = this.imgs.length - 1;
         }
       }
       rightArrow: function clickRigth(){
         this.activeImg++;
-        if(this.activeImg >= this.img.length){
+        if(this.activeImg >= this.imgs.length){
           this.activeImg = 0;
         }
       }

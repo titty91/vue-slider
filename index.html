@@ -19,14 +19,12 @@
 
 <body>
     <main>
-        <section id="app" class="slideContainer">
+        <section id="app" class="galleriaContainer">
             <h1> - Galleria Foto - </h1>
-
-            <div class="imgs-list noSelect">
+            <div class="imgs-list">
                 <i class="fas fa-chevron-circle-left" id="leftArrow" @click='clickImg'></i>
                   <img class="active firstImg" :src="imgs[activeImg]">
                 <i class="fas fa-chevron-circle-right" id="rightArrow" @click='clickImg'></i>
-
             </div>
         </section>
     </main>

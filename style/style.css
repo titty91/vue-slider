@@ -12,16 +12,16 @@ body{
 }
 
 /* Proprietà main */
-.slideContainer{
+.galleriaContainer{
     text-align: center;
     margin: 50px auto;
     width: 80%;
     min-width: 550px;
 }
 
-.slideContainer h1{
+.galleriaContainer h1{
     color: white;
-    font-size: 55px;
+    font-size: 60px;
     margin: 20px 0;
     text-shadow: 2px 2px 0 red;
 }
