@@ -11,22 +11,22 @@ var divFoto = new Vue({
       'img/cabin.png',
       'img/game.png'
     ],
-    'activeImg': 0;
+    'activeImg': 0
   },
   methods:{
     clickImg(){
-      leftArrow: function(){
+      leftArrow: function clickLeft(){
         this.activeImg--;
         if(this.activeImg < 0){
           this.activeImg = this.img.length - 1;
         }
-      },
-      rightArrow: function(){
+      }
+      rightArrow: function clickRigth(){
         this.activeImg++;
-        if((this.activeImg >= this.img.length){
+        if(this.activeImg >= this.img.length){
           this.activeImg = 0;
         }
       }
     }
   }
-})
+});

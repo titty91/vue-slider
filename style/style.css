@@ -11,7 +11,6 @@ body{
     font-family: 'Pacifico', cursive;
 }
 
-
 /* Proprietà main */
 .slideContainer{
     text-align: center;
@@ -19,6 +18,7 @@ body{
     width: 80%;
     min-width: 550px;
 }
+
 .slideContainer h1{
     color: white;
     font-size: 55px;
@@ -64,9 +64,9 @@ body{
 }
 /* Freccia sx */
 .imgs-list i#leftArrow{
-    left: 20px;
+    left: 30px;
 }
 /* Freccia dx */
 .imgs-list i#rightArrow{
-    right: 20px;
+    right: 30px;
 }
