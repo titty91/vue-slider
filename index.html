@@ -5,40 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
     <title> slider</title>
-
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2e0cc00556.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <main>
         <section id="app" class="slideContainer">
-            <h1>Carousel</h1>
+            <h1> - Galleria Foto - </h1>
 
             <div class="imgs-list noSelect">
-                <i class="far fa-caret-square-left" id="left-arrow" @click='clickImg'></i>
-
-                <!-- Img 0 -->
-                <img class="active firstImg"
-                    :src="activeImg" alt="Img-0"
-                    data-imgPos='0'>
-
-                <i class="far fa-caret-square-right" id="right-arrow" @click='clickImg'></i>
+                <i class="fas fa-chevron-circle-left" id="leftArrow" @click='clickImg'></i>
+                  <img class="active firstImg" :src="imgs">
+                <i class="fas fa-chevron-circle-right" id="rightArrow" @click='clickImg'></i>
 
             </div>
         </section>
     </main>
     <script src="main/script.js"></script>
-
 </body>
 
 </html>

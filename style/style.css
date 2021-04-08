@@ -8,23 +8,9 @@
 
 body{
     background-color:orange;
+    font-family: 'Pacifico', cursive;
 }
 
-ul{
-    list-style-type: none;
-}
-li{
-    display: inline-block;
-}
-/* No blue highlight on click */
-.noSelect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 
 /* Proprietà main */
 .slideContainer{
@@ -37,7 +23,7 @@ li{
     color: white;
     font-size: 55px;
     margin: 20px 0;
-    text-shadow: 2px 2px 0 black;
+    text-shadow: 2px 2px 0 red;
 }
 
 /* Proprietà imgs */
@@ -54,32 +40,33 @@ li{
 .imgs-list img{
     width: 100%;
     display: none;
+    object-position: 0 -100px;
 }
 .imgs-list img.active{
     display: inline-block;
 }
 
 /* Icons freccie */
-.imgs-list .fa-caret-square-left, .imgs-list .fa-caret-square-right{
+.imgs-list .fa-chevron-circle-left, .imgs-list .fa-chevron-circle-right{
     font-size: 45px;
     position: absolute;
     z-index: 100;
     top: 50%;
     transform: translateY(-50%);
     color: white;
-    text-shadow: 0 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 -1px 0 black;
+    /* text-shadow: 0 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 -1px 0 black; */
     cursor: pointer;
     transition: color 0.4s, text-shadow 0.4s;
 }
 .imgs-list i:hover{
-    color: black;
+    color: red;
     text-shadow: 0 1px 0 white, 1px 0 0 white, -1px 0 0 white, 0 -1px 0 white;
 }
 /* Freccia sx */
-.imgs-list i#left-arrow{
+.imgs-list i#leftArrow{
     left: 20px;
 }
 /* Freccia dx */
-.imgs-list i#right-arrow{
+.imgs-list i#rightArrow{
     right: 20px;
 }
